@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://inkubator.solotechnopark.id
+
+# Sitemaps
+Sitemap: https://inkubator.solotechnopark.id/sitemap.xml

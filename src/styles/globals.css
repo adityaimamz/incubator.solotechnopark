@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  line-height: 1.75rem;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: "Open Sans", sans-serif; */
+  @apply text-gray-800;
+}
+
+.bg-primary-100 h1,
+.bg-primary-100 h2,
+.bg-primary-100 h3,
+.bg-primary-100 h4,
+.bg-primary-100 h5,
+.bg-primary-100 h6 {
+  @apply text-white;
+}
+
+p,
+ul {
+  @apply text-gray-700;
+}
+
+strong {
+  @apply font-bold text-primary-100;
+}
+/* 
+bold {
+  @apply font-bold text-4xl;
+} */
+
+h1 {
+  line-height: 3.5rem !important;
+}
+
+.container {
+  @apply mx-auto px-5 max-w-6xl;
+}
+
+.container-fluid {
+  @apply mx-auto px-5 lg:px-24;
+}
+
+.head-1 {
+  @apply text-3xl lg:text-5xl font-bold max-w-lg;
+}
+
+.head-2 {
+  @apply text-2xl lg:text-4xl font-bold max-w-lg;
+}
+
+.head-3 {
+  @apply text-xl lg:text-3xl font-bold max-w-lg;
+}
+
+.head-4 {
+  @apply lg:text-xl text-lg font-bold max-w-lg;
+}
+
+.head-5 {
+  @apply lg:text-lg font-bold max-w-lg;
+}
+
+.paragraph {
+  @apply lg:text-lg text-gray-600 max-w-xl my-5;
+}
+
+.gradient-to-right {
+  @apply bg-gradient-to-r from-red-600 to-orange-600 text-white;
+}
+
+.card {
+  @apply mx-auto;
+}
+
+.navbar {
+  /* @apply fixed top-0 left-0 right-0 w-full z-50 backdrop-blur-md bg-white/80 shadow-sm animate-fadeInBottom; */
+  @apply bg-white fixed top-0 w-full z-50 md:backdrop-blur-md md:bg-white/80 shadow-sm animate-fadeInBottom;
+}
+
+.news-content p,
+.news-content ul {
+  @apply text-gray-600 my-5;
+}
+
+.news-content p,
+.news-content li,
+.news-content span {
+  @apply text-gray-600;
+}
+
+.news-content h1,
+.news-content h2,
+.news-content h3,
+.news-content h4,
+.news-content h5,
+.news-content h6 {
+  @apply font-medium my-6 text-gray-800;
+}
+
+.news-content h1,
+.event-content h1 {
+  @apply text-2xl font-medium text-gray-800;
+}
+.news-content h2,
+.event-content h2 {
+  @apply text-3xl font-medium text-gray-800 my-5;
+}
+.news-content h3,
+.event-content h3 {
+  @apply text-lg font-medium text-gray-800;
+}
+
+.news-content a,
+.news-content strong,
+.event-content a {
+  @apply text-primary-100 hover:text-secondary-200 transition-all;
+}
+
+.content-innerHTML h1 {
+  @apply head-2;
+}
+
+.content-innerHTML p,
+.event-content p,
+.event-content img {
+  @apply my-5;
+}
+
+.content-innerHTML li,
+.event-content li {
+  @apply list-disc ml-5;
+}
+
+.content-innerHTML ol li,
+.event-content ol li {
+  @apply list-decimal ml-5;
+}
+
+.content-innerHTML a {
+  @apply text-primary-100;
+}
+
+.bg-primary-100 .container strong {
+  @apply text-secondary-200;
+}
+
+.about strong {
+  @apply text-gray-700;
+}
+
+.about ul li {
+  @apply list-disc ml-10 mb-5;
+}
+
+.bg-gradient-patern {
+  @apply bg-no-repeat bg-patern;
+  background-position: right top, left bottom;
+}
